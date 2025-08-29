@@ -24,8 +24,6 @@ def split_categories(items):
 
     for raw in items:
         s = "" if raw is None else str(raw)
-
-        # Gather letters for the letter stream from ANY token
         for ch in s:
             if ch.isalpha():
                 letter_stream.append(ch)
